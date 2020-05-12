@@ -118,11 +118,11 @@ var constraints = {
 
 console.log('Getting user media with constraints', constraints);
 
-if (location.hostname !== 'https://webrtcconnect1.herokuapp.com') {
+
   requestTurn(
     'https://computeengineondemand.appspot.com/turn?username=41784574&key=4080218913'
   );
-}
+
 
 function maybeStart() {
   console.log('>>>>>>> maybeStart() ', isStarted, localStream, isChannelReady);
@@ -217,8 +217,8 @@ function requestTurn(turnURL) {
         var turnServer = JSON.parse(xhr.responseText);
         console.log('Got TURN server: ', turnServer);
         pcConfig.iceServers.push({
-          'urls': 'turn:' + turnServer.username + '@' + turnServer.turn,
-          'credential': turnServer.password
+          'urls': 'turn:numb.viagenie.ca:' + 'lobopranayk9@gmail.com',
+          'credential': 'REDcherry@1'
         });
         turnReady = true;
       }
