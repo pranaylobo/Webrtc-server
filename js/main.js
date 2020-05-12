@@ -118,7 +118,11 @@ var constraints = {
 
 console.log('Getting user media with constraints', constraints);
 
-
+if (window.location.href == 'https://webrtcconnect1.herokuapp.com/') {
+  requestTurn(
+    'numb.viagenie.ca'
+  );
+}
   
 
 
