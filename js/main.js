@@ -119,6 +119,7 @@ var constraints = {
 console.log('Getting user media with constraints', constraints);
 
 if (window.location.href == 'https://webrtcconnect1.herokuapp.com/') {
+  console.log("seeeeeeeeeeeeeeeeeeeeeeeeeeeex");
   requestTurn(
     'numb.viagenie.ca'
   );
@@ -202,6 +203,7 @@ function onCreateSessionDescriptionError(error) {
 }
 
 function requestTurn(turnURL) {
+  console.log("helllllllllllllllllllllllo");
   var turnExists = false;
   for (var i in pcConfig.iceServers) {
     if (pcConfig.iceServers[i].urls.substr(0, 5) === 'turn:') {
